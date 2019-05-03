@@ -1,0 +1,8 @@
+Bundle-SymbolicName:\
+  org.ops4j.pax.jdbc.derbyclient
+
+Bundle-Activator:\
+  org.ops4j.pax.jdbc.derbyclient.impl.Activator
+  
+Provide-Capability:\
+	 osgi.service;objectClass=org.osgi.service.jdbc.DataSourceFactory;osgi.jdbc.driver.class=org.apache.derby.jdbc.ClientDriver;osgi.jdbc.driver.name=derbyclient

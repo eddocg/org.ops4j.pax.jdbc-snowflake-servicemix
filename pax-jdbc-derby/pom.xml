@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>jdbc</artifactId>
+        <groupId>org.ops4j.pax</groupId>
+        <version>1.0.1</version>
+        <relativePath>..</relativePath>
+    </parent>
+    <groupId>org.ops4j.pax.jdbc</groupId>
+    <artifactId>pax-jdbc-derby</artifactId>
+    <packaging>bundle</packaging>
+
+    <name>OPS4J Pax JDBC Apache Derby Driver Adapter</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

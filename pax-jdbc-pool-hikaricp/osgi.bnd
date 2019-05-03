@@ -1,0 +1,5 @@
+Bundle-SymbolicName:\
+  org.ops4j.pax.jdbc.pool.hikaricp
+
+Bundle-Activator:\
+  org.ops4j.pax.jdbc.pool.hikaricp.impl.Activator

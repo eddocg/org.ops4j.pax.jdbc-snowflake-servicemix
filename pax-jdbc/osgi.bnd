@@ -1,0 +1,12 @@
+Bundle-SymbolicName:\
+  org.ops4j.pax.jdbc
+
+Bundle-Activator:\
+  org.ops4j.pax.jdbc.impl.Activator
+
+Import-Package:\
+  org.osgi.service.jdbc; version="[1.0,1.1)",\
+  *
+
+Provide-Capability:\
+	 osgi.service;objectClass=org.osgi.service.jdbc.DataSourceFactory

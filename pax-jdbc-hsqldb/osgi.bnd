@@ -1,0 +1,6 @@
+Bundle-SymbolicName:\
+  org.ops4j.pax.jdbc.hsqldb
+
+Bundle-Activator:\
+  org.ops4j.pax.jdbc.hsqldb.impl.Activator
+ 

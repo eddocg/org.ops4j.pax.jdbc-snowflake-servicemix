@@ -1,0 +1,14 @@
+Bundle-SymbolicName:\
+  org.ops4j.pax.jdbc.oracle
+
+Bundle-Activator:\
+  org.ops4j.pax.jdbc.oracle.impl.Activator
+
+Import-Package:\
+  oracle.jdbc,\
+  oracle.jdbc.pool,\
+  oracle.jdbc.xa.client,\
+  *
+
+Provide-Capability:\
+	 osgi.service;objectClass=org.osgi.service.jdbc.DataSourceFactory;osgi.jdbc.driver.class=oracle.jdbc.OracleDriver;osgi.jdbc.driver.name=oracle

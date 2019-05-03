@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>jdbc</artifactId>
+        <groupId>org.ops4j.pax</groupId>
+        <version>1.0.1</version>
+        <relativePath>..</relativePath>
+    </parent>
+    <groupId>org.ops4j.pax.jdbc</groupId>
+    <artifactId>pax-jdbc-pool-c3p0</artifactId>
+    <name>OPS4J Pax JDBC Pooling Support using C3P0</name>
+    <packaging>bundle</packaging>
+
+    <properties>
+        <bundle.symbolicName>org.ops4j.pax.jdbc.pool.c3p0</bundle.symbolicName>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.c3p0</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.jdbc</groupId>
+            <artifactId>pax-jdbc-pool-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,13 @@
+Bundle-SymbolicName:\
+  org.ops4j.pax.jdbc.jtds
+
+Bundle-Activator:\
+  org.ops4j.pax.jdbc.jtds.impl.Activator
+
+Import-Package:\
+  net.sourceforge.jtds.jdbc,\
+  net.sourceforge.jtds.jdbcx,\
+  *
+
+Provide-Capability:\
+  osgi.service;objectClass=org.osgi.service.jdbc.DataSourceFactory;osgi.jdbc.driver.class=net.sourceforge.jtds.jdbc.Driver;osgi.jdbc.driver.name=jtds
